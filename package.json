@@ -1,9 +1,12 @@
 {
   "name": "graph-ql",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier --write .",
+    "dev": "nodemon -r sucrase/register src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,20 @@
   "homepage": "https://github.com/devDudu-21/graph-ql#readme",
   "description": "",
   "dependencies": {
-    "apollo-server": "^3.13.0",
-    "graphql": "^16.11.0"
+    "apollo-server": "2.23.0",
+    "graphql": "15.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.2.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "sucrase": "^3.35.0"
   }
 }
