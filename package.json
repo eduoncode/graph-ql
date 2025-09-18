@@ -21,7 +21,7 @@
   "homepage": "https://github.com/devDudu-21/graph-ql#readme",
   "description": "",
   "dependencies": {
-    "apollo-server": "2.23.0",
+    "apollo-server": "3.13.0",
     "graphql": "15.5.0"
   },
   "devDependencies": {
